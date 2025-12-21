@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan El-Sheikha</title>
+    <meta name="description" content="Computer Science researcher and software engineer specializing in operating systems, compilers, and applied LLMs. University of Toronto.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">HE</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link nav-link-cta">Get in Touch</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#research" class="mobile-link">Research</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#publications" class="mobile-link">Publications</a>
+            <a href="#contact" class="mobile-link">Get in Touch</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <div class="hero-profile reveal">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGmtPbJdS4PKA/profile-displayphoto-shrink_200_200/B4EZc.U56YHgAc-/0/1749097358362?e=1767830400&v=beta&t=Imb25S3dqAJu-T69mRDfIiK7EA6Q0IF6y39mCv03-wg" alt="Hassan El-Sheikha" class="hero-avatar">
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Hassan El-Sheikha</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Computer Science Researcher & Software Engineer
+            </p>
+            <p class="hero-description reveal">
+                Building the future of computing through <span class="highlight">compilers</span>, 
+                <span class="highlight">operating systems</span>, and <span class="highlight">applied AI</span>. 
+                Currently pursuing my HBSc at the University of Toronto with a 4.0 GPA.
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#experience" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-value">4.0</span>
+                    <span class="stat-label">GPA</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">2</span>
+                    <span class="stat-label">Patents Filed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-value">1</span>
+                    <span class="stat-label">Publication</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About Me</span>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="about-lead">
+                        I'm a computer science student at the University of Toronto with a passion for 
+                        building tools that make complex systems more accessible and efficient.
+                    </p>
+                    <p class="about-text">
+                        My research interests span <strong>operating systems</strong>, <strong>compilers and 
+                        program analysis</strong>, <strong>retrieval-augmented generation</strong>, and 
+                        <strong>applied LLMs for systems and tooling</strong>.
+                    </p>
+                </div>
+                
+                <div class="about-education reveal">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3>University of Toronto</h3>
+                            <p class="education-degree">Honors Bachelor of Science (HBSc)</p>
+                            <p class="education-field">Computer Science</p>
+                            <p class="education-date">2021 – June 2026 (Expected)</p>
+                            <div class="education-gpa">
+                                <span class="gpa-label">GPA</span>
+                                <span class="gpa-value">4.0 / 4.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coursework reveal">
+                <h3 class="coursework-title">Notable Coursework</h3>
+                <div class="coursework-grid">
+                    <div class="course-tag">Operating Systems</div>
+                    <div class="course-tag">Compilers & Interpreters</div>
+                    <div class="course-tag">Computer Security</div>
+                    <div class="course-tag">Machine Learning</div>
+                    <div class="course-tag">Computer Networks</div>
+                    <div class="course-tag">Algorithms</div>
+                    <div class="course-tag">Computability Theory</div>
+                    <div class="course-tag">Functional Programming</div>
+                    <div class="course-tag">Artificial Intelligence</div>
+                    <div class="course-tag">Databases</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've Made Impact</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Microchip -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-info">
+                                    <div class="company-logo microchip">
+                                        <img src="https://logos-world.net/wp-content/uploads/2025/01/Microchip-Symbol.png" alt="Microchip Technology" class="logo-img">
+                                    </div>
+                                    <div>
+                                        <h3 class="company-name">Microchip Technology</h3>
+                                        <p class="role-title">Software Engineering Intern</p>
+                                    </div>
+                                </div>
+                                <span class="experience-date">May 2024 – Aug 2025</span>
+                            </div>
+                            <div class="experience-body">
+                                <ul class="experience-list">
+                                    <li>Developed <strong>LLVM-based analysis and transformation passes</strong> for SmartHLS, a C++-to-Verilog high-level synthesis compiler.</li>
+                                    <li>Designed a debugging system for arbitrary-precision number types, leading to <a href="#publications" class="inline-link"><strong>U.S. Patent Application No. 19/304,364</strong></a>.</li>
+                                    <li>Built a <strong>RAG framework</strong> for semantic search over multimodal data, adopted by multiple business units across the company.</li>
+                                    <li>Contributed to LLM-based Verilog optimization, resulting in a second <a href="#publications" class="inline-link"><strong>patent application on ReAct Agents</strong></a>.</li>
+                                    <li>Made many open-source contributions to SmartHLS, including the complete <a href="https://github.com/MicrochipTech/fpga-hls-examples/tree/main/auto_instrument" target="_blank" rel="noopener" class="inline-link">auto-instrumentation example</a> with code and comprehensive documentation for on-chip debugging.</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span class="exp-tag">LLVM</span>
+                                    <span class="exp-tag">C++</span>
+                                    <span class="exp-tag">HLS</span>
+                                    <span class="exp-tag">RAG</span>
+                                    <span class="exp-tag">LLMs</span>
+                                    <span class="exp-tag">Verilog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UofT Libraries -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <div class="company-info">
+                                    <div class="company-logo uoft">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1200px-Utoronto_coa.svg.png" alt="University of Toronto" class="logo-img">
+                                    </div>
+                                    <div>
+                                        <h3 class="company-name">University of Toronto</h3>
+                                        <p class="role-title">Software Engineering Intern, Digital Scholarship Unit</p>
+                                    </div>
+                                </div>
+                                <span class="experience-date">Apr 2023 – Sep 2023</span>
+                            </div>
+                            <div class="experience-body">
+                                <ul class="experience-list">
+                                    <li>Designed and implemented <a href="https://digitalutsc.github.io/site_watch/installation/" target="_blank" rel="noopener" class="inline-link"><strong>SiteWatch</strong></a>, a fully documented monitoring and alerting tool for Islandora/Drupal-based digital preservation systems.</li>
+                                    <li>Built <a href="https://github.com/hassanelsheikha/collection_utilities/tree/master/foxml_scripts" target="_blank" rel="noopener" class="inline-link"><strong>FOXTROT</strong></a>, a Python tool for migrating BagIt FOXML files from managed to inline MODS for metadata simplification.</li>
+                                    <li>Extended and maintained <a href="https://github.com/mjordan/islandora_workbench" target="_blank" rel="noopener" class="inline-link"><strong>Islandora Workbench</strong></a> and other open-source tools to support large-scale metadata ingest, validation, and transformation for historical newspaper collections.</li>
+                                    <li>Collaborated with librarians and historians to design pipelines for extracting, structuring, and preserving archival content for <strong>digital humanities research</strong>.</li>
+                                </ul>
+                                <div class="experience-tags">
+                                    <span class="exp-tag">Python</span>
+                                    <span class="exp-tag">Drupal</span>
+                                    <span class="exp-tag">Islandora</span>
+                                    <span class="exp-tag">Digital Preservation</span>
+                                    <span class="exp-tag">Open Source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section research" id="research">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Research</span>
+                <h2 class="section-title">Academic Contributions</h2>
+            </div>
+
+            <div class="research-featured reveal">
+                <div class="research-card featured">
+                    <div class="research-visual">
+                        <img src="https://avatars.githubusercontent.com/u/193433458?s=200&v=4" alt="Varphi Logo" class="varphi-logo">
+                        <div class="research-glow"></div>
+                    </div>
+                    <div class="research-content">
+                        <div class="research-meta">
+                            <span class="research-tag">Featured Project</span>
+                            <span class="research-date">2024 – 2025</span>
+                        </div>
+                        <h3 class="research-title">Varphi</h3>
+                        <p class="research-subtitle">A Domain-Specific Language for Turing Machines</p>
+                        <p class="research-description">
+                            Designed and implemented Varphi, a domain-specific language for specifying and 
+                            simulating Turing machines. The project includes a modular compiler framework with 
+                            multiple backends, VS Code integration, and comprehensive debugging tools.
+                        </p>
+                        <div class="research-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-value">180+</span>
+                                <span class="highlight-label">Students Used</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-value">WCCCE '25</span>
+                                <span class="highlight-label">Published</span>
+                            </div>
+                        </div>
+                        <div class="research-tech">
+                            <span class="tech-tag">ANTLR</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">VS Code Extension</span>
+                            <span class="tech-tag">DAP</span>
+                        </div>
+                        <div class="research-links">
+                            <a href="https://github.com/varphi-lang" target="_blank" rel="noopener" class="research-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://docs.varphi-lang.com/" target="_blank" rel="noopener" class="research-link" title="Documentation">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                <span>Docs</span>
+                            </a>
+                            <a href="https://mru.arcabc.ca/western-canadian-conference-computing-education-wccce-25/varphi-description-language-turing" target="_blank" rel="noopener" class="research-link" title="Paper">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                                <span>Paper</span>
+                            </a>
+                            <a href="https://www.utm.utoronto.ca/math-cs-stats/news/mcs-faculty-and-student-present-novel-programming-language-varphi-wccce-2025" target="_blank" rel="noopener" class="research-link" title="News">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/>
+                                </svg>
+                                <span>News</span>
+                            </a>
+                        </div>
+                        <p class="research-supervisor">
+                            <strong>Supervisor:</strong> <a href="https://www.mmsquared.ca/" target="_blank" rel="noopener" class="inline-link">Dr. Mohammad Mahmoud</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-other reveal">
+                <h3 class="subsection-title">Other Scholarly Contributions</h3>
+                <div class="contributions-grid contributions-grid-2">
+                    <div class="contribution-card">
+                        <div class="contribution-icon">📚</div>
+                        <h4>Textbook Contributions</h4>
+                        <p>Contributed to an open textbook for CSC363 (Computability Theory) with exercises and solutions. Also contributed edits to "Introduction to Proofs and Proof Strategies" by Shay Fuchs (Cambridge, 2023) and the MAT223 Linear Algebra Workbook by Jason Siefken.</p>
+                    </div>
+                    <div class="contribution-card">
+                        <div class="contribution-icon">🔬</div>
+                        <h4>Upcoming Research</h4>
+                        <p>2026 research on LLM-assisted grading for CS assessments with anticipated publication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Academic & Personal Work</h2>
+            </div>
+
+            <div class="projects-grid reveal">
+                <!-- Varphi - Most impressive: Published research, DSL/compiler design -->
+                <div class="project-card featured-project varphi-project">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-img">
+                            <img src="https://avatars.githubusercontent.com/u/193433458?s=200&v=4" alt="Varphi" class="project-logo">
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://github.com/varphi-lang" target="_blank" rel="noopener" class="project-mini-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://docs.varphi-lang.com/" target="_blank" rel="noopener" class="project-mini-link" title="Documentation">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                            </a>
+                            <a href="https://mru.arcabc.ca/western-canadian-conference-computing-education-wccce-25/varphi-description-language-turing" target="_blank" rel="noopener" class="project-mini-link" title="Paper">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.utm.utoronto.ca/math-cs-stats/news/mcs-faculty-and-student-present-novel-programming-language-varphi-wccce-2025" target="_blank" rel="noopener" class="project-mini-link" title="News Article">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-award">📄 Published at WCCCE '25</div>
+                    <h3 class="project-title">Varphi</h3>
+                    <p class="project-description">A domain-specific language for specifying and simulating Turing machines with modular compiler, VS Code extension, and DAP-compliant debugger. Used by 180+ students at UofT.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">ANTLR</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">C</span>
+                        <span class="project-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- EssayBrainstormer - Hackathon winner -->
+                <div class="project-card featured-project">
+                    <div class="project-header">
+                        <div class="project-icon">🏆</div>
+                        <div class="project-links-row">
+                            <a href="https://github.com/hassanelsheikha/EssayBrainstormer" target="_blank" rel="noopener" class="project-mini-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://devpost.com/software/definiton-finder" target="_blank" rel="noopener" class="project-mini-link" title="Devpost">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M6.002 1.61L0 12.004L6.002 22.39h11.996L24 12.004L17.998 1.61H6.002zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31c0 4.436-3.21 6.302-6.456 6.302H7.595V5.694zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861c.009-2.569-1.096-3.853-3.767-3.853h-1.336z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-award">🥈 2nd Place - DeerHacks 2022</div>
+                    <h3 class="project-title">EssayBrainstormer</h3>
+                    <p class="project-description">Hackathon-winning platform that automates essay brainstorming using UiPath automation, Wikipedia scraping, and Flask web framework.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">UiPath</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                </div>
+
+                <!-- CityAkinator - ML from scratch -->
+                <a href="https://github.com/hassanelsheikha/CityAkinator" target="_blank" rel="noopener" class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌍</div>
+                        <svg class="project-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">CityAkinator</h3>
+                    <p class="project-description">Machine learning classifiers (MLP, KNN, Logistic Regression) trained to predict cities based on features, with custom model implementations from scratch.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">ML</span>
+                        <span class="project-tag">NumPy</span>
+                    </div>
+                </a>
+
+                <!-- ComponentsPriceBot - Full system -->
+                <a href="https://github.com/hassanelsheikha/ComponentsPriceBot" target="_blank" rel="noopener" class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <svg class="project-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">ComponentsPriceBot</h3>
+                    <p class="project-description">Discord bot that scrapes PC component prices from BestBuy, stores data in MySQL, and provides price alerts and watchlist notifications.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Selenium</span>
+                        <span class="project-tag">Discord.py</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                </a>
+
+                <!-- RISC-V Simon - Low-level assembly -->
+                <a href="https://github.com/hassanelsheikha/RISC-V-Simon" target="_blank" rel="noopener" class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <svg class="project-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">RISC-V Simon</h3>
+                    <p class="project-description">A memory game implementation written entirely in RISC-V assembly language, played on the Ripes simulator with LED matrix and D-Pad I/O.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">RISC-V</span>
+                        <span class="project-tag">Assembly</span>
+                        <span class="project-tag">Ripes</span>
+                    </div>
+                </a>
+
+                <!-- WordleJS - Full-stack web -->
+                <a href="https://github.com/hassanelsheikha/wordlejs" target="_blank" rel="noopener" class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📝</div>
+                        <svg class="project-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">WordleJS</h3>
+                    <p class="project-description">A full-stack Wordle clone with separate frontend and backend architecture, implementing the popular word-guessing game mechanics.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Full-Stack</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                </a>
+
+                <!-- Bamboggled - Java/GUI -->
+                <a href="https://github.com/Mind-Bogglers/Bamboggled" target="_blank" rel="noopener" class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎲</div>
+                        <svg class="project-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Bamboggled</h3>
+                    <p class="project-description">A digital recreation of the classic Boggle board game built with JavaFX, featuring an interactive UI and word validation system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Java</span>
+                        <span class="project-tag">JavaFX</span>
+                        <span class="project-tag">GUI</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section publications" id="publications">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Publications</span>
+                <h2 class="section-title">Research Output</h2>
+            </div>
+
+            <div class="publications-grid">
+                <div class="publication-category reveal">
+                    <h3 class="category-title">
+                        <span class="category-icon">📄</span>
+                        Peer-Reviewed Articles
+                    </h3>
+                    <div class="publication-item">
+                        <div class="publication-number">1</div>
+                        <div class="publication-content">
+                            <p class="publication-authors">
+                                <strong>Hassan El-Sheikha</strong> and Mohammad A. Mahmoud
+                            </p>
+                            <p class="publication-title">
+                                "Varphi: A Description Language for Turing Machines"
+                            </p>
+                            <p class="publication-venue">
+                                Proceedings of the Western Canada Conference on Computing Education 2025 (WCCCE '25)
+                            </p>
+                            <a href="https://doi.org/10.60770/wzt9-s649" class="publication-link" target="_blank" rel="noopener">
+                                <span>View Publication</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="publication-category reveal">
+                    <h3 class="category-title">
+                        <span class="category-icon">⚖️</span>
+                        Patents (Filed)
+                    </h3>
+                    <div class="publication-item" id="patent-1">
+                        <div class="publication-number">1</div>
+                        <div class="publication-content">
+                            <p class="publication-authors">Co-Inventor</p>
+                            <p class="publication-title">
+                                "Systems and Methods for Control of Arbitrary-Precision Numbers in High-Level Synthesis"
+                            </p>
+                            <p class="publication-venue">
+                                U.S. Patent Application No. 19/304,364 (2025) • Assigned to Microchip Technology
+                            </p>
+                        </div>
+                    </div>
+                    <div class="publication-item" id="patent-2">
+                        <div class="publication-number">2</div>
+                        <div class="publication-content">
+                            <p class="publication-authors">Co-Inventor</p>
+                            <p class="publication-title">
+                                "Systems and Methods for Optimizing HLS-Generated HDL Code using ReAct Agents with Techniques for Overcoming Generative AI Model Output Context Window Limitations"
+                            </p>
+                            <p class="publication-venue">
+                                U.S. Patent Application (2025) • Assigned to Microchip Technology
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section awards" id="awards">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Honors & Awards</h2>
+            </div>
+
+            <div class="awards-grid reveal">
+                <div class="award-card">
+                    <div class="award-year">2025</div>
+                    <div class="award-content">
+                        <h4>PTRC Invention Contributor Plaque</h4>
+                        <p>Microchip Technology</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-year">2025</div>
+                    <div class="award-content">
+                        <h4>Tom Hull Scholarship in Computer Science</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </div>
+                <a href="https://www.utm.utoronto.ca/math-cs-stats/news/2024-mcs-awards-ceremony" target="_blank" rel="noopener" class="award-card award-card-link">
+                    <div class="award-year">2024</div>
+                    <div class="award-content">
+                        <h4>MCS Prize in Computer Science</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </a>
+                <a href="https://philosophy.utoronto.ca/utm/utm-philosophy-undergraduate/utm-departmental-awards/2024-utm-awards-and-prizes/" target="_blank" rel="noopener" class="award-card award-card-link">
+                    <div class="award-year">2024</div>
+                    <div class="award-content">
+                        <h4>Philosophy Excellence 200 Prize</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </a>
+                <div class="award-card">
+                    <div class="award-year">2023–24</div>
+                    <div class="award-content">
+                        <h4>Dean's List Scholar</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-year">2023</div>
+                    <div class="award-content">
+                        <h4>TC Energy STEM Scholarship</h4>
+                        <p>TC Energy</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-year">2022</div>
+                    <div class="award-content">
+                        <h4>DeerHacks 2022 - 2nd Place</h4>
+                        <p>UiPath Automation Category</p>
+                    </div>
+                </div>
+                <a href="https://www.utm.utoronto.ca/math-cs-stats/awards/student-awards/honour-roll/2021-2022" target="_blank" rel="noopener" class="award-card award-card-link">
+                    <div class="award-year">2022</div>
+                    <div class="award-content">
+                        <h4>MCS Honor Roll</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </a>
+                <div class="award-card">
+                    <div class="award-year">2021</div>
+                    <div class="award-content">
+                        <h4>Entrance Scholarship</h4>
+                        <p>University of Toronto</p>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-year">2021</div>
+                    <div class="award-content">
+                        <h4>Euclid Mathematics Contest - High Distinction</h4>
+                        <p>CEMC</p>
+                    </div>
+                </div>
+                <a href="https://cemc.uwaterloo.ca/sites/default/files/documents/2020/2020CxMCResults.pdf" target="_blank" rel="noopener" class="award-card award-card-link">
+                    <div class="award-year">2020</div>
+                    <div class="award-content">
+                        <h4>Canadian Senior Mathematics Contest - High Distinction</h4>
+                        <p>CEMC</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-content">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="contact-title">Let's Build Something Together</h2>
+                    <p class="contact-description">
+                        I'm always interested in discussing new opportunities, research collaborations, 
+                        or just connecting with others.
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:hmelsheikha@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">hmelsheikha@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/hassan-el-sheikha" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">hassan-el-sheikha</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/hassanelsheikha" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">hassanelsheikha</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-location">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Toronto, ON, Canada</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2025 Hassan El-Sheikha
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
